@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Burnout"
+license = "MIT"
+licenselink = "https://github.com/pentesterwtf/burnout/blob/master/LICENSE.md"
+description = "Clean and minimal personal blog and portfolio theme."
+homepage = "https://github.com/pentesterwtf"
+tags = ["derp"]
+features = []
+min_version = "0.37.0"
+
+[author]
+  name = "Pentester, wtf"
+  homepage = "https://pentester.wtf"

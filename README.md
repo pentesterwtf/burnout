@@ -1,0 +1,4 @@
+# Burnout
+
+A hugo theme.
+
