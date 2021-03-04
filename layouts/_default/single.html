@@ -8,8 +8,24 @@
 
 		<div class="post-header">
 			<h1 class="title">{{ .Title }}</h1>
+			<h3>
+				<blockquote>{{ .Description }}</blockquote>
+			</h3>
+
+			<div class="meta">
+				Tags &mdash; |
+				{{ range .Params.tags }}
+				<a href="tags/{{ . | absURL }}/">{{ . }}</a> |
+				{{ end }}
+				Categories: &mdash;
+				{{ range .Params.categories }}
+				<a href="categories/{{ . | absURL }}/">{{ . }}</a> |
+				{{ end }}
+			</div>
 			<div class="meta">Posted at &mdash; {{ dateFormat "Jan 2, 2006" .Date }}</div>
-			<h3><blockquote>{{ .Description }}</blockquote></h3>
+
+
+
 
 
 		</div>
