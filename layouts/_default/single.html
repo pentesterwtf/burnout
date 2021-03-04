@@ -15,11 +15,11 @@
 			<div class="meta">
 				Tags &mdash; |
 				{{ range .Params.tags }}
-				<a href="tags/{{ . | absURL }}/">{{ . }}</a> |
+				<a href="/tags{{ . | relURL }}/">{{ . }}</a> |
 				{{ end }}
 				Categories: &mdash;
 				{{ range .Params.categories }}
-				<a href="categories/{{ . | absURL }}/">{{ . }}</a> |
+				<a href="/categories{{ . | relURL }}/">{{ . }}</a> |
 				{{ end }}
 			</div>
 			<div class="meta">Posted at &mdash; {{ dateFormat "Jan 2, 2006" .Date }}</div>
