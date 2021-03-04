@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 {{ partial "header.html" . }}
+
 <body>
 	<div class="container wrapper post">
 		{{ partial "head.html" . }}
@@ -8,6 +9,9 @@
 		<div class="post-header">
 			<h1 class="title">{{ .Title }}</h1>
 			<div class="meta">Posted at &mdash; {{ dateFormat "Jan 2, 2006" .Date }}</div>
+			<h3><blockquote>{{ .Description }}</blockquote></h3>
+
+
 		</div>
 
 		<div class="markdown">
@@ -17,4 +21,5 @@
 	</div>
 	{{ partial "footer.html" . }}
 </body>
+
 </html>
